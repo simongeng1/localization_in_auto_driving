@@ -16,6 +16,7 @@
 
 #### 3.1.安装g2o
 安装过程，将文件clone到work space后，需要安装g2o，处于setup_file,有个压缩包，解压缩后进入build，运行以下命令
+
 cmake .. 
 
 make
