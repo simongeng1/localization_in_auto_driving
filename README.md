@@ -14,8 +14,17 @@
 
 这是我个人的调试环境，也没在别的环境上测试过，所以前期可能会暴露不少问题，如果遇到，各位可以在本工程里提issue，也可以在对应的博客下面的评论区留言。
 
+#### 3.1.安装g2o
+安装过程，将文件clone到work space后，需要安装g2o，处于setup_file,有个压缩包，解压缩后进入build，运行以下命令
+cmake ..
+make
+大约十几分钟后，运行结束后，运行
+sudo make install
+
+
 #### 4.测试数据
 开源程序最好使用开放数据集，所以我们选择了KITTI，并且把RawData里的"2011_10_03_drive_0027_sync"做成了bag文件，后面所有程序的测试都是在这个bag基础上做的。    
 数据文件我放在了百度网盘里   
 地址：https://pan.baidu.com/s/1TyXbifoTHubu3zt4jZ90Wg   
 提取码: n9ys
+
